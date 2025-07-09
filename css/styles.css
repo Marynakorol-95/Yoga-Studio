@@ -316,6 +316,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  border-radius: 30px;
 }
 
 .hero-title {
@@ -333,31 +334,6 @@ img {
     font-size: 30px;
 }
 
-/*.hero-btn {
-  min-width: 169px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #f4f4fd;
-  background-color: #784578;
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
-  border-radius: 4px;
-  padding: 16px 32px;
-  border: none;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: #da9acb;
-}
-*/ 
-/*new about me*/
-
 .about-me-container {
   display: flex;
   flex-direction: column;
@@ -372,8 +348,8 @@ img {
   background: #f3f3f3;
   padding-top: 40px;
   padding-bottom: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .about-me-title {
@@ -436,6 +412,7 @@ img {
 
 .team {
   background-color: #f4f4fd;
+  /*background-color: #c4eba2;*/
 }
 
 .team-title {
@@ -457,7 +434,7 @@ img {
 }
 
 .team-img {
-  filter: blur(2px);
+  filter: blur(1.5px);
 }
 
 .team-bottom {
@@ -514,7 +491,8 @@ img {
 
 .portfolio-item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+  background-color: #ebd9ec;
+  /*
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -523,7 +501,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  filter: blur(2px);
+  filter: blur(2px)*/;
 }
 
 .portfolio-item:hover {
@@ -545,7 +523,7 @@ img {
 .portfolio-cover-text {
   position: absolute;
   top: 0;
-  background-color: #4d5ae5;
+  background-color: #73447a;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -566,8 +544,88 @@ img {
   margin-bottom: 8px;
 }
 
+/*  відгуки   */
+
+.testimonials {
+  padding: 80px 20px;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.carousel {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.testimonial {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  animation: fade 1s ease-in-out;
+}
+
+.testimonial.active {
+  display: flex;
+}
+
+.testimonial img {
+  width: 300px;
+  height: auto;
+  border-radius: 30px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-weight: bold;
+  color: #222;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #888;
+  padding: 10px;
+}
+
+.carousel-btn:hover {
+  color: #000;
+}
+
+.carousel-btn.prev {
+  left: 0;
+}
+
+.carousel-btn.next {
+  right: 0;
+}
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 .footer {
-  background-color: #49194d;
+  background-color: #73447a;
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -585,7 +643,7 @@ img {
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -609,7 +667,7 @@ img {
 
 .footer-subtitle {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
@@ -631,8 +689,8 @@ img {
 }
 
 .footer-social-item {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 }
 
 .footer-social-link {
@@ -734,12 +792,12 @@ img {
   }
 
   .about-me-text {
-    border-radius: 50px;
-    padding-top: 80px;
+    padding: auto;
+    /*padding-top: 80px;
     padding-bottom: 80px;
     padding-left: 60px;
-    padding-right: 60px;
-    min-width: 504px;
+    padding-right: 60px;*/
+    min-width: 600px;
   }
 
   .about-me-title {
@@ -855,14 +913,16 @@ img {
 
   .about-me-container {
     flex-direction: row;
+    align-items: stretch;
+    max-width: 1150px;
   }
 
   .about-me-subtitle{
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .about-me-dscr {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 125%;
     max-width: 660px;
   }
@@ -871,7 +931,7 @@ img {
   .about-me-img {
     flex: 1;
   }
-
+  
   .about-me-img {
     width: 100%;
     height: 100%;
@@ -886,8 +946,38 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 8px;
-    background-color: #f4f4fd;
+    margin-bottom: 16px;
+  }
+  .one {
+  background-image:
+    url(../images/photo-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .two {
+    background-image:
+    url(../images/photo-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .three {
+    background-image:
+    url(../images/photo-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .four {
+    background-image:
+    url(../images/photo-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .features-list {
@@ -909,6 +999,11 @@ img {
 
   .team-item {
     flex-basis: calc((100% - 72px) / 4);
+  }
+
+  .team-img {
+    width: 313px;
+    height: auto;
   }
 
   .portfolio-list {
