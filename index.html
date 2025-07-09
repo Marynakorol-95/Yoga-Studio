@@ -19,26 +19,26 @@
     <header class="header">
         <div class="container">
             <nav class="header-nav">
-                <a class="header-logo" href="./index.html">Web<span class="header-logo-accent">Studio</span></a>
+                <a class="header-logo" href="./index.html">YOGA<span class="header-logo-accent">Studio</span></a>
                 <ul class="header-menu-list">
                     <li class="header-menu-item">
-                        <a class="header-menu-link active" href="./index.html">Studio</a>
+                        <a class="header-menu-link" href="#about">Про мене</a>
                     </li>
                     <li class="header-menu-item">
-                        <a class="header-menu-link" href="">Portfolio</a>
+                        <a class="header-menu-link" href="#features">Мої послуги</a>
                     </li>
                     <li class="header-menu-item">
-                        <a class="header-menu-link" href="">Contacts</a>
+                        <a class="header-menu-link" href="#contacts">Контакти</a>
                     </li>
                 </ul>
             </nav>
             <address class="header-address">
                 <ul class="header-address-list">
                     <li class="header-address-item">
-                        <a class="header-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="header-address-link" href="mailto:marinakukharenko0@gmail.com">marinakukharenko0@gmail.com</a>
                     </li>
                     <li class="header-address-item">
-                        <a class="header-address-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        <a class="header-address-link" href="tel:+380995542945">+38 (099)-554-29-45</a>
                     </li>
                 </ul>
             </address>
@@ -74,10 +74,10 @@
                 <address class="mob-address">
                     <ul class="mob-address-list">
                         <li class="mob-address-item">
-                            <a class="mob-address-link active" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            <a class="mob-address-link active" href="mailto:marinakukharenko0@gmail.com">marinakukharenko0@gmail.com</a>
                         </li>
                         <li class="mob-address-item">
-                            <a class="mob-address-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                            <a class="mob-address-link" href="tel:+380995542945">+38 (099)-554-29-45</a>
                         </li>
                     </ul>
                 </address>
@@ -115,13 +115,58 @@
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero container">
             <div class="container">
-                <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button class="hero-btn" type="button">Order Service</button>
+                <h1 class="hero-title">
+                    Welcome to YOGA <br>
+                    <span class="hero-sub">with Maryna Kukharenko</span>
+                </h1>
             </div>
         </section>
-        <section class="features section">
+
+        <section class="about-me section" id="about">
+            <div class="container about-me-container">
+                <div class="about-me-text">
+                    <h2 class="about-me-title">Намасте, я Марина</h2>      <p class="about-me-subtitle">Інструктор з йоги | Біоенергетик </p>
+                    <ul class="about-me-list">
+                        <li class="about-me-item">
+                            <p class="about-me-dscr"> Я знайшла себе в йозі та щодня відкриваю в ній нові ресурси для особистісного росту, самореалізації й служіння людям. Завдяки регулярній практиці змогла подолати власні проблеми зі здоров’ям, покращити якість життя та знайти внутрішню гармонію.
+                            </p>
+                        </li>
+                        <li class="about-me-item">
+                            <p class="about-me-dscr"> Вже понад 17 років я викладаю йогу в Україні та Польщі. Мій підхід поєднує роботу з тілом, свідомістю та емоційним станом. Я вірю, що йога — це не лише гнучкість і сила, це також шлях до розуміння себе, до прийняття та відчуття глибшого сенсу життя.
+                            </p>
+                        </li>
+                        <li class="about-me-item">
+                            <p class="about-me-dscr"> У своїх заняттях я інтегрую:
+                            </p>
+                        </li>
+                        <li class="about-me-item">
+                            <p class="about-me-dscr">
+                                - принципи Аюрведи для глибшого розуміння балансу в тілі й психіці,<br>
+                                - дихальні практики (пранаяма) для заспокоєння розуму та покращення енергії,<br>
+                                - медитації для очищення внутрішнього простору й розвитку усвідомленості,<br>
+                                - роботу з енергіями та техніки розслаблення для глибокого відновлення.<br>
+                            </p>
+                        </li>
+                        <li class="about-me-item">
+                            <p class="about-me-dscr"> Моя мета — створити для кожного простір, де можна бути собою, відчути себе підтриманим і наповненим. Я вірю, що завдяки усвідомленій практиці кожна людина може відновити зв’язок зі своїм тілом, серцем і душею.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-me-img">
+                    <picture>
+                        <source media="(min-width: 1280px)" srcset="./images/img-me.jpg" />
+                        <source media="(min-width: 768px)" srcset="./images/img-me.jpg" />
+                        <source media="(max-width: 767px)" srcset="./images/img-me.jpg" />
+                        <img src="/img/about/about-desk-min.png" alt="My photo" class="rounded-image" />
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section class="features section" id="features">
             <div class="container">
                 <h2 class="visually-hidden">features</h2>
                 <ul class="features-list">
@@ -181,123 +226,24 @@
                 <h2 class="team-title title">Our Team</h2>
                 <ul class="team-list">
                     <li class="team-item">
-                        <img class="team-img" srcset="
-                  ./images/team-card-1.jpg    1x,
-                  ./images/team-card-1-2x.jpg 2x
-                " src="./images/team-card-1.jpg" width="264" height="260" alt="Mark Guerrero" />
+                        <img class="team-img" src="./images/prof-1.PNG" width="264" height="260" alt="Mark Guerrero" />
                         <div class="team-bottom">
                             <h3 class="team-subtitle subtitle">Mark Guerrero</h3>
-                            <p class="team-text text">Product Designer</p>
-                            <ul class="team-social-list">
-                                <li class="team-social-item">
-                                    <a href="" class="team-social-link">
-                                        <svg class="team-social-icon" width="16" height="16">
-                                            <use href="./images/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team-social-item">
-                                    <a href="" class="team-social-link">
-                                        <svg class="team-social-icon" width="16" height="16">
-                                            <use href="./images/icons.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team-social-item">
-                                    <a href="" class="team-social-link">
-                                        <svg class="team-social-icon" width="16" height="16">
-                                            <use href="./images/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team-social-item">
-                                    <a href="" class="team-social-link">
-                                        <svg class="team-social-icon" width="16" height="16">
-                                            <use href="./images/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
+                            <p class="team-text text">Product Designer</p>                         
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="team-img" srcset="
-                  ./images/team-card-2.jpg    1x,
-                  ./images/team-card-2-2x.jpg 2x
-                " src="./images/team-card-2.jpg" width="264" height="260" alt="Tom Ford" />
+                        <img class="team-img" src="./images/prof-3.JPG" width="264" height="260" alt="Tom Ford" />
                         <div class="team-bottom">
                             <h3 class="team-subtitle subtitle">Tom Ford</h3>
-                            <p class="team-text text">Frontend Developer</p>
-                            <ul class="team-social-list">
-                                <li class="team-social-item">
-                                    <a href="" class="team-social-link">
-                                        <svg class="team-social-icon" width="16" height="16">
-                                            <use href="./images/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team-social-item">
-                                    <a href="" class="team-social-link">
-                                        <svg class="team-social-icon" width="16" height="16">
-                                            <use href="./images/icons.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team-social-item">
-                                    <a href="" class="team-social-link">
-                                        <svg class="team-social-icon" width="16" height="16">
-                                            <use href="./images/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team-social-item">
-                                    <a href="" class="team-social-link">
-                                        <svg class="team-social-icon" width="16" height="16">
-                                            <use href="./images/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
+                            <p class="team-text text">Frontend Developer</p> 
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="team-img" srcset="
-                  ./images/team-card-3.jpg    1x,
-                  ./images/team-card-3-2x.jpg 2x
-                " src="./images/team-card-3.jpg" width="264" height="260" alt="Camila Garcia" />
+                        <img class="team-img" src="./images/prof-2.PNG" width="264" height="260" alt="Camila Garcia" />
                         <div class="team-bottom">
                             <h3 class="team-subtitle subtitle">Camila Garcia</h3>
                             <p class="team-text text">Marketing</p>
-                            <ul class="team-social-list">
-                                <li class="team-social-item">
-                                    <a href="" class="team-social-link">
-                                        <svg class="team-social-icon" width="16" height="16">
-                                            <use href="./images/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team-social-item">
-                                    <a href="" class="team-social-link">
-                                        <svg class="team-social-icon" width="16" height="16">
-                                            <use href="./images/icons.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team-social-item">
-                                    <a href="" class="team-social-link">
-                                        <svg class="team-social-icon" width="16" height="16">
-                                            <use href="./images/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="team-social-item">
-                                    <a href="" class="team-social-link">
-                                        <svg class="team-social-icon" width="16" height="16">
-                                            <use href="./images/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </li>
                     <li class="team-item">
@@ -348,33 +294,9 @@
                 <h2 class="portfolio-title title">Our Portfolio</h2>
                 <ul class="portfolio-list">
                     <li class="portfolio-item">
-                        <div class="portfolio-cover-wrap">
-                            <picture>
-                                <source srcset="
-                      ./images/portfolio-1.jpg    1x,
-                      ./images/portfolio-1-2x.jpg 2x
-                    " media="(min-width: 1158px)" />
-                                <source srcset="
-                      ./images/portfolio-1-tab.jpg    1x,
-                      ./images/portfolio-1-tab-2x.jpg 2x
-                    " media="(min-width: 768px)" />
-                                <source srcset="
-                      ./images/portfolio-1-mob.jpg    1x,
-                      ./images/portfolio-1-mob-2x.jpg 2x
-                    " media="(min-width: 320px)" />
-                                <img src="./images/portfolio-1.jpg" width="360" alt="Banking App"
-                                    class="portfolio-img" />
-                            </picture>
-
-                            <p class="portfolio-cover-text">
-                                14 Stylish and User-Friendly App Design Concepts · Task
-                                Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                                · Cloud Storage App
-                            </p>
-                        </div>
-                        <div class="portfolio-bottom">
-                            <h3 class="portfolio-subtitle subtitle">Banking App</h3>
-                            <p class="portfolio-text text">App</p>
+                        <div class="photo-text">
+                            <h3 class="portfolio-subtitle">Banking App</h3>
+                            <p class="portfolio-text">Aphjgm jhkgjh jdfhgjkgh jdfgh p</p>
                         </div>
                     </li>
                     <li class="portfolio-item">
@@ -531,120 +453,33 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-text-wrap">
-                <a class="footer-logo" href="./index.html">Web<span class="footer-logo-accent">Studio</span></a>
+                <a class="footer-logo" href="./index.html">YOGA<span class="footer-logo-accent">Studio</span></a>
                 <p class="footer-text">
-                    Increase the flow of customers and sales for your business with
-                    digital marketing & growth solutions.
+                    Відчуйте глибоку підтримку, спокій і силу практики.<br>
+                    Запрошую вас до простору, де йога — це про вас, про ваше тіло, дихання і шлях.
                 </p>
             </div>
             <div class="footer-soc-wrap">
-                <p class="footer-subtitle">Social media</p>
+                <p class="footer-subtitle">Соціальні мережі</p>
                 <ul class="footer-social-list">
                     <li class="footer-social-item">
-                        <a href="" class="footer-social-link">
+                        <a href="https://www.instagram.com/yogawro_/" target="_blank" class="footer-social-link">
                             <svg class="footer-social-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="footer-social-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="footer-social-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a href="" class="footer-social-link">
+                        <a href="https://www.facebook.com/people/%D0%9C%D0%B0%D1%80%D0%B8%D0%BD%D0%B0-%D0%9A%D1%83%D1%85%D0%B0%D1%80%D0%B5%D0%BD%D0%BA%D0%BE/pfbid0HTYVimQmUyUCD6FwEy5DJ2iaSgwSUKvAn5gytPpRYbRWdMq7QqkZDmaY15Re7ReXl/?ref=_ig_profile_ac" target="_blank" class="footer-social-link">
                             <svg class="footer-social-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-social-item">
-                        <a href="" class="footer-social-link">
-                            <svg class="footer-social-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
                 </ul>
-            </div>
-            <div class="footer-form-wrap">
-                <p class="footer-subtitle">Subscribe</p>
-                <form class="footer-form">
-                    <label aria-label="footer-email" class="footer-label"><input type="email" name="footer-email"
-                            placeholder="E-mail" class="footer-input" />
-                    </label>
-
-                    <button type="submit" class="footer-btn">
-                        Subscribe<svg class="footer-btn-icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                </form>
             </div>
         </div>
     </footer>
-    <div class="backdrop">
-        <div class="modal">
-            <button type="button" class="modal-close-btn">
-                <svg class="modal-close-icon" width="8" height="8">
-                    <use href="./images/icons.svg#icon-close"></use>
-                </svg>
-            </button>
-            <p class="modal-title">Leave your contacts and we will call you back</p>
-            <form class="modal-form">
-                <div class="modal-field">
-                    <label for="user-name" class="modal-label">Name</label>
-                    <div class="input-wrap">
-                        <input type="text" name="user-name" id="user-name" class="modal-input" />
-                        <svg class="modal-icon" width="18" height="24">
-                            <use href="./images/icons.svg#icon-person"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="modal-field">
-                    <label for="user-phone" class="modal-label">Phone</label>
-                    <div class="input-wrap">
-                        <input type="tel" name="user-phone" id="user-phone" class="modal-input" />
-                        <svg class="modal-icon" width="18" height="24">
-                            <use href="./images/icons.svg#icon-phone"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="modal-field">
-                    <label for="user-name" class="modal-label">Email</label>
-                    <div class="input-wrap">
-                        <input type="email" name="user-email" id="user-email" class="modal-input" />
-                        <svg class="modal-icon" width="18" height="24">
-                            <use href="./images/icons.svg#icon-email"></use>
-                        </svg>
-                    </div>
-                </div>
-                <div class="modal-field">
-                    <label for="user-comment" class="modal-label">Comment</label>
-                    <textarea name="user-comment" id="user-comment" class="modal-input modal-textarea"
-                        placeholder="Text input"></textarea>
-                </div>
-                <div class="modal-checkbox-wrapper">
-                    <input type="checkbox" name="user-privacy" id="user-privacy" value="true"
-                        class="modal-check visually-hidden" />
-                    <label for="user-privacy" class="modal-check-text"><span class="modal-check-span">
-                            <svg class="modal-check-icon" width="10" height="8">
-                                <use href="./images/icons.svg#icon-check"></use>
-                            </svg>
-                        </span>
-                        <span>
-                            I accept the terms and conditions of the&nbsp;
-                            <a href="" class="modal-check-link">Privacy Policy</a>
-                        </span>
-                    </label>
-                </div>
-                <button type="submit" class="modal-btn">Send</button>
-            </form>
-        </div>
-    </div>
 </body>
 
 </html>
