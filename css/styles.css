@@ -206,7 +206,7 @@ img {
   pointer-events: auto;
 }
 
-/*.mob-menu-container {
+.mob-menu-container {
   position: relative;
   padding-top: 72px;
   padding-bottom: 40px;
@@ -216,7 +216,7 @@ img {
   display: flex;
   flex-direction: column;
   height: 100%;
-}*/
+}
 
 .menu-close-btn {
   position: absolute;
